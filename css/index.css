@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #e8e7ff 5%, #05006df2 100%);
+    font-family: "Times New Roman", serif;
+    color: white;
+    position: relative;
+  }
+
+  .title {
+    /* Librook */
+    font-family: 'Kalnia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 86px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin: 0;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 24px;
+    color: #E8E8E8;
+    left: calc(48% - 252px/2);
+
+    position: absolute;
+    bottom: 20px;
+  }
+
+
