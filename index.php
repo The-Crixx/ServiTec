@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="css/index.css">
   <title>Servitec</title>
 </head>
-
 <body>
   <div class="container">
     <h1 class="title">Servitec</h1>
