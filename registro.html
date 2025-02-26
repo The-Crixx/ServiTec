@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiTec</title>
+</head>
+<body>
+    <div id="registro">
+        <form action="agregar.php" method="POST">
+            <h1>Registrar una cuenta</h1>
+            <label for="nombre">Nombre/s</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <label for="nctrl">Numero de control</label>
+            <input type="text" id="nctrl" name="nctrl" required>
+            <label for="carrera">Carrera</label>
+            <select id="carrera" name="carrera" required>
+                <option value="ing. Sistemas Computacionales">Ingeniería en Sistemas Computacionales</option>
+                <option value="ing. Industrial">Ingeniería Industrial</option>
+                <option value="ing. Mecanica">Ingeniería Mecanica</option>
+                <option value="ing. Electronica">Ingeniería Electrónica</option>
+                <option value="ing. Quimica">Ingeniería Química</option>
+                <option value="ing. En informatica">Ingeniería en Informatica</option>
+            </select>
+            <label for="cred">Creditos Cursados</label>
+            <input type="text" id="cred" name="cred" required>
+            <label for="contraseña">Ingresa tu contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+            <label for="rcontraseña">Repite tu contraseña</label>
+            <input type="password" id="rcontraseña" name="rcontraseña" required>
+            <button type="submit">Registrar</button>
+            <a href="login.html">¿Ya tienes una cuenta?</a>
+        </form>
+    </div>
+</body>
+</html>

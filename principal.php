@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include("conexion.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenido a ServiTec<? $_SESSION ?></h1>
+        <h1>Bienvenido <?php printf($_SESSION["username"]); ?> a ServiTec</h1>
         <nav>
             <ul>
                 <li></li>
