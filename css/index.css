@@ -1,43 +1,36 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, #e8e7ff 5%, #05006df2 100%);
-    font-family: "Times New Roman", serif;
-    color: white;
-    position: relative;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0,41,107);
+  background: linear-gradient(60deg, rgba(0,41,107,1) 0%, rgba(255,255,255,1) 100%); 
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  position: relative;
+}
 
-  .title {
-    /* Librook */
-    font-family: 'Kalnia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 86px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 86px;
+  text-align: center;
+  color: white;
+  text-shadow:
+    0 0 5px white,
+    0 0 10px rgba(255, 255, 255, 0.8);
+}
 
-    color: #FFFFFF;
-
-    margin: 0;
-    text-align: center;
-  }
-
-  .subtitle {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 24px;
-    color: #E8E8E8;
-    left: calc(48% - 252px/2);
-
-    position: absolute;
-    bottom: 20px;
-  }
-
-
+.subtitle {
+  text-align: center;
+  font-style: normal;
+  font-size: 24px;
+  color: white;
+  text-shadow:
+    0 0 5px white,
+    0 0 10px white;
+}

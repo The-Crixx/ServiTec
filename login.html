@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
     <title>Servitec</title>
 </head>
 <body>
@@ -10,12 +12,15 @@
         <h1>Inicio de sesión</h1>
         <form action="loginp.php" method="POST">
             <label for="nctrl">Ingresa tu numero de control:</label>
-            <input type="text" id="nctrl" name="nctrl" placeholder="Numero de control" required>
+            <input type="text" id="nctrl" name="nctrl" required>
             <label for="contraseña">Ingresa tu contraseña</label>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+            <input type="password" id="contraseña" name="contraseña" required>
             <button type="submit">Iniciar Sesion</button>
         </form>
         <a href="registro.html">¿Aun no tienes cuenta?</a>
+    </div>
+    <div class="container_img">
+        <img src="img/logito.png" class="logito">
     </div>
 </body>
 </html>
