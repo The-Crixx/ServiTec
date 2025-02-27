@@ -1,0 +1,17 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+header.bg-primary {
+    background-color: rgb(24,57,106) !important;
+}
+
+a.btn {
+    background-color: rgb(24,57,106);
+    border-color: rgb(9, 56, 127);
+}
+
+a.btn:hover {
+    background-color: rgb(32, 78, 146);
+    border-color: rgb(13, 74, 165);
+}

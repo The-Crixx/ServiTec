@@ -6,8 +6,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(0,41,107);
-  background: linear-gradient(60deg, rgba(0,41,107,1) 0%, rgba(255,255,255,1) 100%); 
+  background: rgb(24,57,106);
+  background: linear-gradient(60deg, rgba(24,57,106,1) 0%, rgba(255,255,255,1) 100%); 
   font-family: 'Poppins', sans-serif;
   color: white;
   position: relative;
