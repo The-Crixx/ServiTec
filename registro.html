@@ -4,35 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ServiTec</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id="registro">
-        <form action="agregar.php" method="POST">
+    <div id="registro" class="container">
+        <form id="registroForm" action="agregar.php" method="POST">
             <h1>Registrar una cuenta</h1>
-            <label for="nombre">Nombre/s</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="apellidos">Apellidos</label>
-            <input type="text" id="apellidos" name="apellidos" required>
-            <label for="nctrl">Numero de control</label>
-            <input type="text" id="nctrl" name="nctrl" required>
-            <label for="carrera">Carrera</label>
-            <select id="carrera" name="carrera" required>
-                <option value="ing. Sistemas Computacionales">Ingeniería en Sistemas Computacionales</option>
-                <option value="ing. Industrial">Ingeniería Industrial</option>
-                <option value="ing. Mecanica">Ingeniería Mecanica</option>
-                <option value="ing. Electronica">Ingeniería Electrónica</option>
-                <option value="ing. Quimica">Ingeniería Química</option>
-                <option value="ing. En informatica">Ingeniería en Informatica</option>
-            </select>
-            <label for="cred">Creditos Cursados</label>
-            <input type="text" id="cred" name="cred" required>
-            <label for="contraseña">Ingresa tu contraseña</label>
-            <input type="password" id="contraseña" name="contraseña" required>
-            <label for="rcontraseña">Repite tu contraseña</label>
-            <input type="password" id="rcontraseña" name="rcontraseña" required>
-            <button type="submit">Registrar</button>
+            <div class="form-group">
+                <label for="nombre">Nombre/s</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="nctrl">Numero de control</label>
+                <input type="text" class="form-control" id="nctrl" name="nctrl" required>
+            </div>
+            <div class="form-group">
+                <label for="carrera">Carrera</label>
+                <select class="form-control" id="carrera" name="carrera" required>
+                    <option value="">Selecciona una carrera</option>
+                    <option value="ing. Sistemas Computacionales">Ingeniería en Sistemas Computacionales</option>
+                    <option value="ing. Industrial">Ingeniería Industrial</option>
+                    <option value="ing. Mecanica">Ingeniería Mecanica</option>
+                    <option value="ing. Electronica">Ingeniería Electrónica</option>
+                    <option value="ing. Quimica">Ingeniería Química</option>
+                    <option value="ing. En informatica">Ingeniería en Informatica</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cred">Creditos Cursados</label>
+                <input type="number" class="form-control" id="cred" name="cred" required>
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Ingresa tu contraseña</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+            </div>
+            <div class="form-group">
+                <label for="rcontraseña">Repite tu contraseña</label>
+                <input type="password" class="form-control" id="rcontraseña" name="rcontraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
             <a href="login.html">¿Ya tienes una cuenta?</a>
         </form>
     </div>
+
+    <!-- Modal de error -->
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="errorModalBody">
+                    <!-- Mensaje de error se mostrará aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#registroForm').submit(function(event) {
+                event.preventDefault();
+
+                // Validaciones adicionales
+                var nctrl = $('#nctrl').val();
+                var cred = $('#cred').val();
+
+                if (nctrl.length !== 8) {
+                    $('#errorModalBody').text('El número de control debe ser de 8 dígitos.');
+                    $('#errorModal').modal('show');
+                    return;
+                }
+
+                if (cred < 168 || cred > 260) {
+                    $('#errorModalBody').text('Los créditos deben estar entre 168 y 260.');
+                    $('#errorModal').modal('show');
+                    return;
+                }
+
+                this.submit();
+            });
+        });
+    </script>
 </body>
 </html>
