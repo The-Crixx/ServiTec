@@ -19,6 +19,7 @@ try {
             // Verificar si es el administrador
             if ($nctrl == '21011015' && $password == 'admin') {
                 $_SESSION['username'] = $row['nombre'];
+                $_SESSION['nctrl'] = $nctrl;
                 header("Location: admin.php"); // Redirigir a la página de administrador
                 exit; // Finalizar el script después de redirigir
             } else {

@@ -28,29 +28,41 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">ServiTec</a>
+            <a class="navbar-brand" href="principal.php">ServiTec</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="principal.php">Inicio</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Departamentos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="centro_computo.php">Centro de Computo</a>
-                            <a class="dropdown-item" href="alfabetizacion.php">Alfabetización de Adultos Mayores</a>
-                            <a class="dropdown-item" href="huertos_urbanos.php">Huertos Urbanos</a>
-                            <a class="dropdown-item" href="brigadista.php">Brigadista</a>
+                            <a class="dropdown-item" href="departamento.php?id=dp1">Centro de Computo</a>
+                            <a class="dropdown-item" href="departamento.php?id=dp2">Alfabetización de Adultos Mayores</a>
+                            <a class="dropdown-item" href="departamento.php?id=dp3">Huertos Urbanos</a>
+                            <a class="dropdown-item" href="departamento.php?id=dp4">Brigadista</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="guia_documentos.php">Guía para Documentos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interes.php">Interés</a>
+                    </li>
+                    <?php if ($_SESSION['nctrl'] == '21011015'): ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administrador
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="adminDropdown">
+                            <a class="dropdown-item" href="admin.php">Usuario</a>
+                            <a class="dropdown-item" href="comentarios.php">Comentarios</a>
+                        </div>
+                    </li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>

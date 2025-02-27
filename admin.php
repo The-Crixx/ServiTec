@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include("conexion.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +13,56 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>ADMIN</h1>
-    <p>Esta es la página de administrador</p>
-    <a href="logout.php">Cerrar sesión</a>
-    <div class="container">
+    <header class="bg-primary text-white text-center py-3">
+        <h1>ADMIN</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="principal.php">ServiTec</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Departamentos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="centro_computo.php">Centro de Computo</a>
+                            <a class="dropdown-item" href="alfabetizacion.php">Alfabetización de Adultos Mayores</a>
+                            <a class="dropdown-item" href="huertos_urbanos.php">Huertos Urbanos</a>
+                            <a class="dropdown-item" href="brigadista.php">Brigadista</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guia_documentos.php">Guía para Documentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interes.php">Interés</a>
+                    </li>
+                    <?php if ($_SESSION['nctrl'] == '21011015'): ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administrador
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="adminDropdown">
+                            <a class="dropdown-item" href="admin.php">Usuario</a>
+                            <a class="dropdown-item" href="comentarios.php">Comentarios</a>
+                        </div>
+                    </li>
+                    <?php endif; ?>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
         <h2>Usuarios</h2>
         <table class="table">
             <thead>
