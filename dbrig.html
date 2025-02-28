@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Servicio Social - Brigadas De Seguridad Escolar</title>
+    <a href="principal.php" style="text-decoration: none;">
+        <button>Regresar</button>
+    </a>
+</head>
+<body>
+    <header>
+        <h1>Brigadas</h1>
+    </header>
+    <main>
+        <h2>Información del Departamento</h2>
+        <p><strong>Jefe del Departamento de Brigadas:</strong> Elizabeth Cruz Aguilar </p>
+        <p><strong>Descripción:</strong> Participa en actividades orientadas al bienestar de la comunidad universitaria y su entorno. 
+            Su labor puede incluir la promoción de la salud, la seguridad, la educación ambiental y la organización de eventos solidarios.</p>
+        <h3>Actividades</h3>
+        <ul>
+            <li>Capacitaciones de primeros auxilios</li>
+            <li>Asistir a eventos internos y externos para actuar en caso algun problema</li>
+            <li>Capacitación SEDEMA</li>
+            <li>Guardias al rededor del tecnologico</li>
+            <li>Actividades varias dentro del departamento</li>
+        </ul>
+        <h3>Ubicación</h3>
+        <p>A continuación, se muestra una imagen con la ubicación del departamento:</p>
+        <img src="img/brig.jpeg" alt="Ubicación del Departamento de Brigadas">
+    </main>
+    <aside>
+        <h3>Noticias del Administrador</h3>
+    </aside>
+    <footer>
+        <!-- Formulario que envía los datos -->
+        <form action="get_interes.php" method="POST">
+            <input type="hidden" name="departamento" value="Departamento de Brigadas">
+            <input type="hidden" name="return_url" value="dbrig.html">
+            <button type="submit">Me interesa</button>
+        </form>
+    </footer>
+</body>
+</html>

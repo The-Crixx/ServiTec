@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Servicio Social - Instituto Veracruzano De Educación Para Los Adultos (IVEA)</title>
+    <a href="principal.php" style="text-decoration: none;">
+        <button>Regresar</button>
+    </a>
+</head>
+<body>
+    <header>
+        <h1>IVEA</h1>
+    </header>
+    <main>
+        <h2>Información del Departamento</h2>
+        <p><strong>Jefe del Departamento de IVEA:</strong> Jesus Alberto Cilias Hernández </p>
+        <p><strong>Descripción:</strong> El IVEA es una institución dedicada a brindar servicios educativos gratuitos a
+            personas mayores de 15 años que no han tenido la oportunidad de aprender a leer, escribir o concluir su educación 
+            primaria o secundaria. Su objetivo principal es combatir el rezago educativo en Veracruz, con especial atención a comunidades 
+            marginadas y población vulnerable.</p>
+        <h3>Actividades</h3>
+        <ul>
+            <li>Alfabetización para personas jóvenes y adultas.</li>
+            <li>Asesorías gratuitas</li>
+            <li>Organización de círculos de estudio en comunidades.</li>
+            <li>Implementación del Modelo Educativo para la Vida y el Trabajo.</li>
+            <li>Inclusión educativa para personas con discapacidad.</li>
+        </ul>
+        <h3>Ubicación</h3>
+        <p>A continuación, se muestra una imagen con la ubicación del departamento:</p>
+        <img src="img/brig.jpeg" alt="Ubicación del Departamento de IVEA">
+    </main>
+    <aside>
+        <h3>Noticias del Administrador</h3>
+    </aside>
+    <footer>
+        <!-- Formulario que envía los datos -->
+        <form action="get_interes.php" method="POST">
+            <input type="hidden" name="departamento" value="Departamento de IVEA">
+            <input type="hidden" name="return_url" value="divea.html">
+            <button type="submit">Me interesa</button>
+        </form>
+    </footer>
+</body>
+</html>

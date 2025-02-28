@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Servicio Social - Huertos Urbanos</title>
+    <a href="principal.php" style="text-decoration: none;">
+        <button>Regresar</button>
+    </a>
+</head>
+<body>
+    <header>
+        <h1>Huertos Urbanos</h1>
+    </header>
+    <main>
+        <h2>Información del Departamento</h2>
+        <p><strong>Jefe del Departamento de Huertos Urbanos:</strong> Mari Trini Flores Castañeda </p>
+        <p><strong>Descripción:</strong> Oficina del PAI encargada de la educación ambiental y la sustentabilidad dentro  de la institución</p>
+        <h3>Actividades</h3>
+        <ul>
+            <li>Faena general del HE</li>
+            <li>Mantenimiento de parches polinizadores</li>
+            <li>Capacitación SEDEMA</li>
+            <li>Trabajo comunitario de limpieza en la Laguna del Chirimoyo</li>
+            <li>Muestreo de polinizadores</li>
+            <li>Muestreo Naturalista</li>
+        </ul>
+        <h3>Ubicación</h3>
+        <p>A continuación, se muestra una imagen con la ubicación del departamento:</p>
+        <img src="img/brig.jpeg" alt="Ubicación del Departamento de Huertos Urbanos">
+    </main>
+    <aside>
+        <h3>Noticias del Administrador</h3>
+    </aside>
+    <footer>
+        <!-- Formulario que envía los datos -->
+        <form action="get_interes.php" method="POST">
+            <input type="hidden" name="departamento" value="Departamento de Huertos Urbanos">
+            <input type="hidden" name="return_url" value="dhuert.html">
+            <button type="submit">Me interesa</button>
+        </form>
+    </footer>
+</body>
+</html>

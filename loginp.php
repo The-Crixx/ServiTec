@@ -25,6 +25,7 @@ try {
             } else {
                 // Contraseña correcta: Iniciar sesión y establecer variables de sesión
                 $_SESSION['username'] = $row['nombre'];
+                $_SESSION['nctrl'] = $nctrl; // Asegúrate de establecer esta variable de sesión
                 header("Location: principal.php"); // Redirigir a la página principal después de iniciar sesión
                 exit; // Finalizar el script después de redirigir
             }

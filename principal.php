@@ -73,7 +73,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Centro de Computo</h5>
                         <p class="card-text">Información sobre el Centro de Computo.</p>
-                        <a href="centro_computo.php" class="btn btn-primary">Leer más</a>
+                        <a href="dlab.html" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Alfabetización de Adultos Mayores</h5>
                         <p class="card-text">Información sobre la Alfabetización de Adultos Mayores.</p>
-                        <a href="alfabetizacion.php" class="btn btn-primary">Leer más</a>
+                        <a href="divea.html" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Huertos Urbanos</h5>
                         <p class="card-text">Información sobre los Huertos Urbanos.</p>
-                        <a href="huertos_urbanos.php" class="btn btn-primary">Leer más</a>
+                        <a href="dhuert.html" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Brigadista</h5>
                         <p class="card-text">Información sobre el trabajo de Brigadista.</p>
-                        <a href="brigadista.php" class="btn btn-primary">Leer más</a>
+                        <a href="dbrig.html" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Guía para Documentos</h5>
                         <p class="card-text">Información sobre la guía para documentos necesarios.</p>
-                        <a href="guia_documentos.php" class="btn btn-primary">Leer más</a>
+                        <a href="docs.html" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>

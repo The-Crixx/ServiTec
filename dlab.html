@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Servicio Social - Laboratorio de Cómputo</title>
+    <a href="principal.php" style="text-decoration: none;">
+        <button>Regresar</button>
+    </a>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio de Cómputo</h1>
+    </header>
+    <main>
+        <h2>Información del Departamento</h2>
+        <p><strong>Jefe del Departamento de Cómputo:</strong> Ignacio López Martínez</p>
+        <p><strong>Descripción:</strong> Centro de Cómputo con 10 laboratorios para clase y 3 equipos predispuestos para prestarse a los alumnos del ITO.</p>
+        <h3>Actividades</h3>
+        <ul>
+            <li>Control de Entradas de Alumnos y Docentes</li>
+            <li>Control de Salidas de Alumnos y Docentes</li>
+            <li>Limpieza de Laboratorios</li>
+            <li>Control de Inventario</li>
+            <li>Atención básica a Alumnos y Docentes</li>
+            <li>Verificar posibles objetos perdidos</li>
+        </ul>
+        <h3>Ubicación</h3>
+        <p>A continuación, se muestra una imagen con la ubicación del departamento:</p>
+        <img src="img/lab.jpeg" alt="Ubicación del Departamento de Cómputo">
+    </main>
+    <aside>
+        <h3>Noticias del Administrador</h3>
+    </aside>
+    <footer>
+        <!-- Formulario que envía los datos -->
+        <form action="get_interes.php" method="POST">
+            <input type="hidden" name="departamento" value="Departamento de Cómputo">
+            <input type="hidden" name="return_url" value="dlab.html">
+            <button type="submit">Me interesa</button>
+        </form>
+    </footer>
+</body>
+</html>
