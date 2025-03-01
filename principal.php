@@ -69,7 +69,7 @@
             <!-- Tarjeta Centro de Computo -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="images/centro_computo.jpg" class="card-img-top" alt="Centro de Computo">
+                    <img src="img/lab.jpeg" class="card-img-top" alt="Centro de Computo">
                     <div class="card-body">
                         <h5 class="card-title">Centro de Computo</h5>
                         <p class="card-text">Información sobre el Centro de Computo.</p>
@@ -80,7 +80,7 @@
             <!-- Tarjeta Alfabetización de Adultos Mayores -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="images/alfabetizacion.jpg" class="card-img-top" alt="Alfabetización de Adultos Mayores">
+                    <img src="img/ivea.png" class="card-img-top" alt="Alfabetización de Adultos Mayores">
                     <div class="card-body">
                         <h5 class="card-title">Alfabetización de Adultos Mayores</h5>
                         <p class="card-text">Información sobre la Alfabetización de Adultos Mayores.</p>
@@ -91,7 +91,7 @@
             <!-- Tarjeta Huertos Urbanos -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="images/huertos_urbanos.jpg" class="card-img-top" alt="Huertos Urbanos">
+                    <img src="img/huertos.jpeg" class="card-img-top" alt="Huertos Urbanos">
                     <div class="card-body">
                         <h5 class="card-title">Huertos Urbanos</h5>
                         <p class="card-text">Información sobre los Huertos Urbanos.</p>
@@ -102,7 +102,7 @@
             <!-- Tarjeta Brigadista -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="images/brigadista.jpg" class="card-img-top" alt="Brigadista">
+                    <img src="img/brigadas.png" class="card-img-top" alt="Brigadista">
                     <div class="card-body">
                         <h5 class="card-title">Brigadista</h5>
                         <p class="card-text">Información sobre el trabajo de Brigadista.</p>
@@ -113,7 +113,7 @@
             <!-- Tarjeta Guía para Documentos -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="images/guia_documentos.jpg" class="card-img-top" alt="Guía para Documentos">
+                    <img src="img/docs.jpg" class="card-img-top" alt="Guía para Documentos">
                     <div class="card-body">
                         <h5 class="card-title">Guía para Documentos</h5>
                         <p class="card-text">Información sobre la guía para documentos necesarios.</p>
