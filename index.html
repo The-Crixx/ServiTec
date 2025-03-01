@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <title>Servitec</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -14,10 +15,13 @@
   </div>
 
   <script>
+    $(document).ready(function() {
+      $(".title, .subtitle").hide().fadeIn(2000);
+    });
+
     setTimeout(() => {
       window.location.href = "login.html";
     }, 2000); 
   </script>
 </body>
-
 </html>
